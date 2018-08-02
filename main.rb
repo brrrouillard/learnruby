@@ -53,3 +53,6 @@ text = "Hello my name is".split(" ") # Passes the delimiter as an argument
 text.each do |word|
     puts word
 end
+
+my_arr = (1..5)
+puts my_arr
