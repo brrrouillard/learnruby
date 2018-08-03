@@ -15,8 +15,8 @@ first, second = my_array # Unpacking an array
 my_hash = Hash.new("default")
 my_hash["Bart"] = "Kid"
 other_hash = {
-    "Homer" => "Adult",
-    "Maggie" => "Baby"
+    Homer: "Adult",
+    Maggie: "Baby"
 }
 
 ### LOOPS ###
@@ -54,5 +54,19 @@ text.each do |word|
     puts word
 end
 
-my_arr = (1..5)
-puts my_arr
+### CASE
+
+var = true
+case var
+    when true then puts "True"
+    when false then puts "False"
+end
+
+# OR
+
+case var
+    when true
+        puts "True"
+    when false
+        puts "False"
+end
