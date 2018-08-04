@@ -76,4 +76,12 @@ foo = [1, 2]
 foo.push(3)
 foo << 4 # This works
 "Steve" << "Jobs" ## This works for strings too
-#
+
+
+### PROCS
+# USED TO SAVE AND RE-USE BLOCKS
+
+round_down = Proc.new {|x| x.floor}
+floats = [1.3, 2.4]
+
+ints = floats.map(&round_down) # Re-use the round down block 
